@@ -62,3 +62,12 @@ func Abs[T constraints.Integer | constraints.Float](a T) T {
 	}
 	return a
 }
+
+func Must(fs ...func() error) error {
+	for _, f := range fs {
+		if err := f(); err != nil {
+			return err
+		}
+	}
+	return nil
+}
