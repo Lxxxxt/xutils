@@ -1,4 +1,4 @@
-module go-utils
+module xutils
 
 go 1.20
 
