@@ -1,4 +1,4 @@
-module xutils
+module github.com/Lxxxxt/xutils
 
 go 1.20
 
